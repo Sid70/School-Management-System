@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: rgb(244, 238, 238);
+    padding: 10px 0px;
+
+}
+
+.link {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: white;
+}
+
+.carousel-item img {
+    height: 530px;
+
+}
+
+.vl {
+    border: 2px solid lightgray;
+    background-color: lightgray;
+    height: 300px;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.modal-input {
+    width: 100%;
+}
+
+.form-heading {
+    padding: 20px 0px;
+
+}
+
+.admin_login {
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+.student_login {
+    width: 40%;
+    /* border: 2px solid red; */
+}
+
+#admin {
+    display: none;
+}
+
+#student {
+    display: none;
+}
+
+li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+li a:hover
+{
+    color: rgb(120, 55, 119);
+}
+
+
+@media (max-width:650px) {
+
+    #about
+    {
+        width: 100%;
+    }
+
+    .row-a1
+    {
+        display: flex;
+        flex-direction: column-reverse;        
+        width: 100%;
+        margin: auto;
+    }
+
+    .col-a1,.col-a2
+    {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+    }    
+
+    .carousel-item img
+    {
+        height: 440px;
+    }
+
+   
+}
+
+
+@media (max-width:992px) {
+
+    .form-container {
+        display: block;
+        width: 100%;
+    }
+
+    .vl {
+        display: none;
+    }
+
+    .admin_login {
+        display: block;
+    }
+
+    .student_login {
+        width: 100%;
+    }
+
+    .admin_login {
+        width: 100%;
+    }
+}

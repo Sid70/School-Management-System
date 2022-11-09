@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+}
+
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 22vw;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+	display: block;
+	color: black;
+	padding: 16px 25px;
+	text-align: justify;
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+
+.card {
+	max-width: 20rem;
+}
+
+
+
+
+/* Links on mouse-over */
+.sidebar a:hover {
+	background-color: rgb(161, 90, 90);
+	color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+	margin-left: 22%;
+	padding: 1px 12px;
+	height: max-content;
+}
+
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+th,
+td {
+	text-align: justify;
+}
+
+.status {
+	text-align: end;
+	margin: 13px 0px;
+	font-size: larger;
+}
+
+
+@media (max-width: 575.98px) {
+	* {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 426px) {
+	* {
+		font-size: 11.1px;
+	}
+
+	div.content {
+		margin-left: 0;
+		font-size: 13px;
+		height: max-content;
+	}
+
+	.card {
+		max-width: 22rem;
+	}
+
+}
+
+
+@media (max-width: 991.98px) {
+
+	.sidebar {
+		display: none;
+	}
+
+	div.content {
+		margin-left: 0;
+		width: 100%;
+		height: max-content;
+	}
+
+	.card {
+		max-width: 23rem;
+	}
+}
