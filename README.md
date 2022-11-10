@@ -6,5 +6,5 @@ School Management System Project Link : <a href="http://school-management-sid70.
 
 This is my Project View:
 
-<img src="https://imgur.com/a/waPJEKh" width="100%" height="500px">
+<img src="https://imgur.com/CNpBFdn" width="100%" height="500px">
 
