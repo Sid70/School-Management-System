@@ -21,6 +21,8 @@ if (mysqli_num_rows(mysqli_query($conn, "SELECT email,password FROM student_deta
     exit("<h1>You Email Id is not registered.</h1>");
 }
 
+mysqli_query($conn,"UPDATE `student_details` SET `password` = '$n_password' WHERE `email` = '$ma_email' AND `password` = '$o_password';");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
