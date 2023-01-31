@@ -11,7 +11,7 @@ $n_password = $_POST['n_password'];
 
 if (mysqli_num_rows(mysqli_query($conn, "SELECT admin_email_id FROM `admin_login` WHERE admin_email_id = '$ma_email';"))) {
 
-    if (!mysqli_num_rows(mysqli_query($conn, "SELECT admin_email_id,password FROM student_details WHERE email = '$ma_email' AND admin_password = '$o_password';"))) {
+    if (!mysqli_num_rows(mysqli_query($conn, "SELECT admin_email_id,admin_password FROM admin_login WHERE admin_email_id = '$ma_email' AND admin_password = '$o_password';"))) {
         session_destroy();
         exit("<h1>Your Password is incorrect !</h1>");
     }
